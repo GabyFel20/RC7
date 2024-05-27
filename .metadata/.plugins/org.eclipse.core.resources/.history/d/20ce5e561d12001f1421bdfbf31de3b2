@@ -1,0 +1,27 @@
+package com.generation;
+
+import java.util.Scanner;
+
+public class ControlFlow {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		// Verificacion de edad >18
+		
+		System.out.println("-------Age confirmation-------");
+		System.out.println("Please input your age");
+		int age = sc.nextInt();
+		if (age < 18) {
+			System.out.println("You can't buy beer");
+		} else {
+			System.out.println("Here's your beer");
+		}
+		sc.close();
+		
+
+	}
+
+}

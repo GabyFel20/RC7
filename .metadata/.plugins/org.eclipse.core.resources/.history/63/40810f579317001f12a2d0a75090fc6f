@@ -1,0 +1,14 @@
+package com.poo;
+
+public class Poo {
+
+	public static void main(String[] args) {
+		book book1 = new book("Los Pilares de la Tierra","Ken Follet");
+		book book2 = new book("Cartas al rey de la Cabina", "Pascetti");
+		book1.displayInfo();
+		book2.displayInfo();
+		
+
+	}
+
+}

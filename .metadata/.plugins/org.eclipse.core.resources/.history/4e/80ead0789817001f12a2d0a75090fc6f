@@ -1,0 +1,19 @@
+package com.poo;
+
+public class book {
+	
+	String title;
+	String author;
+	
+	//Constructor
+	book(String title, String author){
+		this.title=title;
+		this.author=author;
+	}
+	
+	
+	void displayInfo() {
+		System.out.println("Title: " + title + ", Author: "+ author);
+	}
+
+}

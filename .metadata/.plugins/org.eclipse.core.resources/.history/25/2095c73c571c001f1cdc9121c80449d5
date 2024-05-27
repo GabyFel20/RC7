@@ -1,0 +1,23 @@
+package com.livecoding;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); // Crea un objeto Scanner
+        System.out.print("Introduce un número entre 1 y 100: ");
+        int numero = sc.nextInt(); // Lee el número introducido por el usuario
+
+        // Validar que el número está en el rango correcto
+        if (numero < 1 || numero > 100) {
+            System.out.println("El número debe estar entre 1 y 100.");
+        } else {
+            FizzBuzz fb = new FizzBuzz();
+            fb.imprimir(numero); // Llama al método imprimir con el número del usuario
+        }
+
+        sc.close(); // Cierra el scanner
+	}
+	}
+

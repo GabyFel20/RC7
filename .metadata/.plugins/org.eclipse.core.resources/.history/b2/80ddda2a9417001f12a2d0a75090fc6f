@@ -1,0 +1,14 @@
+package com.poo;
+
+public class userid {
+	String userName;
+	int id;
+	
+	public userid(String userName, int id) {
+		super();
+		this.userName = userName;
+		this.id = id;
+	}
+
+	
+}

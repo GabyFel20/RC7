@@ -1,0 +1,25 @@
+package com.poo;
+
+import java.util.ArrayList;
+
+public class LybrarySystem {
+	ArrayList<Book> books = new ArrayList<>();
+	ArrayList<User> users = new ArrayList<>();
+	
+	void addUser(User user) {
+		users.add(user);
+		System.out.println(user.username + " added to the DB");
+		
+	}
+	
+	void addBook(Book book) {
+		books.add(book);
+		System.out.println(book.title + "added to the collection");
+	}
+	
+	void rentBook(Book book, User user) {
+		book.rentToUser(user);
+		
+	}
+	
+}

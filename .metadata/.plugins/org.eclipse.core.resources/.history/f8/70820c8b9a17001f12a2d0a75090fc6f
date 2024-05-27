@@ -1,0 +1,25 @@
+package com.poo;
+
+public class Book {
+	
+	String title;
+	String author;
+	boolean isAvailabe;
+	
+	//Constructor
+	Book(String title, String author){
+		this.title=title;
+		this.author=author;
+		this.isAvailabe=true;
+	}
+
+	@Override
+	public String toString() {
+		return "Book [title=" + title + ", author=" + author + "]";
+	}
+	
+	
+	
+	}
+
+

@@ -1,0 +1,11 @@
+package com.livecoding;
+
+public class Main extends FizzBuzz{
+
+	public static void main(String[] args) {
+		 FizzBuzz fb = new FizzBuzz();
+	        fb.imprimir();
+
+	}
+
+}

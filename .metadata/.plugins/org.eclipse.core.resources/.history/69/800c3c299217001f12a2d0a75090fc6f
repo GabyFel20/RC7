@@ -1,0 +1,12 @@
+package com.poo;
+
+public class book {
+	
+	String title ="Los pilares de la Tierra";
+	String author="Ken Follet";
+	
+	void displayInfo() {
+		System.out.println("Title: " + title + ", Author: "+ author);
+	}
+
+}

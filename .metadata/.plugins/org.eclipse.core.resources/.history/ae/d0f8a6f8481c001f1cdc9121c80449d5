@@ -1,0 +1,6 @@
+package com.interfaces;
+
+public class Sphere implements Shape, Shape3D {
+	private double radius;
+
+}

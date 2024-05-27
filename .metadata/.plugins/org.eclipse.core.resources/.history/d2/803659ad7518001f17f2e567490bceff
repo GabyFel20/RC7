@@ -1,0 +1,36 @@
+package com.poo;
+
+public class Book {
+	
+	String title;
+	String author;
+	boolean isAvailable;
+	
+	//Constructor
+	Book(String title, String author){
+		this.title=title;
+		this.author=author;
+		this.isAvailable=true;
+	}
+	
+	public void rentToUser(User user) {
+		if(isAvailable) {
+			user.rentedBooks.add(this);
+			isAvailable = false;
+			System.out.println(user.username + " rented: " + title);
+			
+		}else {
+			System.out.println(title + " is currently not available");
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "Book [title=" + title + ", author=" + author + "]";
+	}
+	
+	
+	
+	}
+
+

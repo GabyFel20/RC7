@@ -1,0 +1,21 @@
+package com.livecoding;
+
+import java.util.Scanner;
+
+public class Main extends FizzBuzz{
+
+		Scanner sc = new Scanner(System.in); 
+        System.out.print("Introduce un número entre 1 y 100: ");
+        int numero = sc.nextInt();
+        
+
+        if (numero < 1 || numero > 100) {
+            System.out.println("El número debe estar entre 1 y 100.");
+        } else {
+            FizzBuzz fb = new FizzBuzz();
+            fb.imprimir(numero); }
+
+        sc.close(); 
+	}
+}
+

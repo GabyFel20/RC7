@@ -1,0 +1,29 @@
+package com.poo;
+
+import java.util.ArrayList;
+
+public class Userid {
+	String userName;
+	int id;
+	ArrayList<Book> rentedBooks= new ArrayList<>();
+	
+	public Userid(String userName, int id) {
+		super();
+		this.userName = userName;
+		this.id = id;
+	}
+	
+	public void listRentedBooks() {
+		System.out.println(userName + " has rented the following books: ");
+		for(Book book : rentedBooks) {
+			System.out.println(book.title);
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "Userid [userName=" + userName + ", id=" + id + "]";
+	}
+
+	
+}
